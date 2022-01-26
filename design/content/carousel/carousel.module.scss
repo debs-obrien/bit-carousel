@@ -1,0 +1,25 @@
+.carousel {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1rem;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+
+  > * {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    object-fit: contain;
+  }
+}
+.animation {
+  animation: conveyerBelt 30s linear infinite forwards; //aka 2.6minutes
+}
+
+@keyframes conveyerBelt {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

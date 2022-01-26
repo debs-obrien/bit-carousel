@@ -1,0 +1,32 @@
+.featured {
+  background-color: var(--primary70, #41378b);
+  overflow: auto;
+  padding: 24px;
+  padding-bottom: 96px;
+  clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
+
+  .heading,
+  .card {
+    color: white;
+  }
+  .card {
+    width: 360px;
+    border: unset;
+    padding: 16px;
+    margin-bottom: 24px;
+    &:hover {
+      background-color: var(--primary30, #6c5ce7);
+    }
+    .cardHeading {
+      margin: 0;
+    }
+    .logo {
+      width: 32px;
+      height: 32px;
+      margin-right: 8px;
+    }
+    &:last-of-type {
+      margin-block-end: 24px;
+    }
+  }
+}

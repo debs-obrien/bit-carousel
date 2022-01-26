@@ -1,0 +1,41 @@
+---
+description: 'Collection of Logos with animation'
+labels: ['logos', 'showcase']
+---
+
+import { LogoShowcase } from './logo-showcase';
+import { FigmaEmbed } from '@teambit/design.embeds.figma';
+import { clientLogos } from '@teambit/community.entity.images';
+
+A showcase of logos with gentle animation. Lazy loading is added by default for all images but can be overridden with the `loading` prop.
+
+### Client logos from imported Json
+
+Imports mock data in json format from the entity component which contains an array of logos.
+
+```js
+import { clientLogos } from '@teambit/community.entity.images';
+
+<LogoShowcase logos={clientLogos} />;
+```
+
+### Showcase of Logos with array of objects
+
+```js live
+<LogoShowcase
+  images={[
+    {
+      src: 'https://static.bit.dev/homepage-enterprise-logos/Dell.svg',
+      alt: 'dell'
+    },
+    {
+      src: 'https://static.bit.dev/homepage-enterprise-logos/Carlsberg-1.svg',
+      alt: 'Carlsberg'
+    }
+  ]}
+/>
+```
+
+### Design
+
+<FigmaEmbed src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FctC1w9YhJvqaO1EZ08gLOV%2FCommunity%3Fnode-id%3D5%253A488" />

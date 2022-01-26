@@ -1,0 +1,27 @@
+---
+description: A Carousel component.
+---
+
+import { Carousel } from './carousel';
+
+Carousel uses gentle animation in form of a conveyor belt. Any child component can be rendered inside the Carousel.
+
+### Render a list of images
+
+```js
+<Carousel>
+  {images.map((item, index) => (
+    <Image src={item.src} alt={item.alt} key={index} />
+  ))}
+</Carousel>
+```
+
+### Reanders a list of images with no Animation
+
+```js
+<Carousel animation={false}>
+  {images.map((item, index) => (
+    <Image src={item.src} alt={item.alt} key={index} />
+  ))}
+</Carousel>
+```

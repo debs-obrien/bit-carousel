@@ -1,0 +1,23 @@
+.logoShowcase {
+  > * {
+    width: 100px;
+    height: 100px;
+    padding: 24px;
+
+    border-radius: 100%; //prevent 'square' shadow
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+
+    image-rendering: optimizeSpeed;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+
+    margin: 20px 40px;
+  }
+
+  > :nth-child(even) {
+    margin-top: 40px;
+  }
+  > :nth-child(odd) {
+    margin-bottom: 40px;
+  }
+}
